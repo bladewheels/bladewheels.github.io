@@ -20,6 +20,8 @@
                     'service-worker.js',
                     { scope: './' }
                 ).then( function(registration) {
+
+                    var serviceWorker;
                     document.getElementById('status').innerHTML = 'successful';
 
                     if (registration.installing) {
